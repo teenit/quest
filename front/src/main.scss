@@ -1,22 +1,24 @@
-
-
-html {
-  $font-size: 1rem;
-  $font-color: lch(28 99 35);
-  font-size: $font-size;
-  color: $font-color;
-  font-family: 'Roboto';
-  .logo1 {
-  width: 10em;
+.App {
+  color: red;
+  &>.open{
+    background-color: #000;
   }
-
-  .logo2 {
-    width: 10em;
-  }
-
-  .h1 {
-    color: red;
-  }
-
+  .App-header {
+    .App-intro {
+      color: greenyellow;
+      &:hover{
+        font-size: 25px;
+      }
+    
+      &.active{
+        background-color: aqua;
+        &:hover{
+          font-size: 12px;
+        }
+      }
+    }
+  } 
 }
-
+.App-intro{
+  color: #000;
+}
